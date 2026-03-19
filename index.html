@@ -532,11 +532,13 @@
       text-align: right;
     }
 
+    /* UPDATED: make section-body scroll horizontally if table is wide */
     .section-body {
       font-size: 12px;
       color: var(--text-muted);
       position: relative;
       z-index: 1;
+      overflow-x: auto;
     }
 
     .pill {
@@ -564,9 +566,10 @@
       box-shadow: 0 0 10px rgba(34,197,94,0.9);
     }
 
-    /* Tables */
+    /* UPDATED TABLES: horizontal scroll + min width */
     table {
       width: 100%;
+      min-width: 600px;
       border-collapse: collapse;
       margin: 10px 0;
       font-size: 11px;
@@ -793,16 +796,33 @@
       }
     }
 
+    /* UPDATED: bigger fonts on small mobiles */
     @media (max-width: 480px) {
       .hero-left h1 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
       }
+
+      .section-body {
+        font-size: 13px;
+      }
+
       table {
-        font-size: 10px;
+        font-size: 12px;
       }
+
+      .step-text,
+      .card {
+        font-size: 12px;
+      }
+
+      .note {
+        font-size: 11px;
+      }
+
       .section {
         padding: 12px 12px 10px;
       }
+
       .logo-text-sub {
         display: none;
       }
@@ -818,7 +838,7 @@
           <div class="logo-icon">🛒</div>
           <div>
             <div class="logo-text-main">TikTok Shop Spain</div>
-            <div class="logo-text-sub">2026 Legal & Cost Blueprint by imranraufBM</div>
+            <div class="logo-text-sub">2026 Legal &amp; Cost Blueprint by imranraufBM</div>
           </div>
         </div>
 
@@ -839,10 +859,10 @@
           <a href="#overview" class="nav-link">Overview</a>
           <a href="#structures" class="nav-link">Legal Forms</a>
           <a href="#costs" class="nav-link">Costs</a>
-          <a href="#shipping" class="nav-link">Shipping & 3PL</a>
+          <a href="#shipping" class="nav-link">Shipping &amp; 3PL</a>
           <a href="#taxes" class="nav-link">Taxes</a>
-          <a href="#imports" class="nav-link">Imports & Customs</a>
-          <a href="#operations" class="nav-link">Home & Abroad</a>
+          <a href="#imports" class="nav-link">Imports &amp; Customs</a>
+          <a href="#operations" class="nav-link">Home &amp; Abroad</a>
           <a href="#verifactu" class="nav-link">VeriFactu</a>
           <a href="#roadmap" class="nav-link">Roadmap</a>
           <a href="#" class="nav-link" id="contactLink">Contact</a>
@@ -858,10 +878,10 @@
             <span class="icon">✅</span>
             <span>Spain · TikTok Shop · 2026</span>
           </div>
-          <h1>Launch & Scale a TikTok Shop in Spain with Minimal Fixed Costs</h1>
+          <h1>Launch &amp; Scale a TikTok Shop in Spain with Minimal Fixed Costs</h1>
           <p>
             Start lean as a Spanish autónomo, ship from home, then move to 3PL and perhaps an SL company only when profits and risk justify it.
-            This page is your legal & cost playbook.
+            This page is your legal &amp; cost playbook.
           </p>
           <div class="hero-cta">
             <a href="#roadmap" class="btn-primary">
@@ -1075,7 +1095,7 @@
         <div class="section-header">
           <div class="section-title">
             <div class="section-title-icon">📦</div>
-            <span>Shipping, packaging & 3PL strategy</span>
+            <span>Shipping, packaging &amp; 3PL strategy</span>
           </div>
           <div class="section-tagline">From shipping at home to outsourcing fulfilment</div>
         </div>
@@ -1158,7 +1178,7 @@
         <div class="section-header">
           <div class="section-title">
             <div class="section-title-icon">🚢</div>
-            <span>Imports & customs: do you need a licence?</span>
+            <span>Imports &amp; customs: do you need a licence?</span>
           </div>
           <div class="section-tagline">EORI number, customs and special cases</div>
         </div>
@@ -1227,7 +1247,7 @@
         <div class="section-header">
           <div class="section-title">
             <div class="section-title-icon">🧾</div>
-            <span>Taxes & quarterly filings – with IRPF examples</span>
+            <span>Taxes &amp; quarterly filings – with IRPF examples</span>
           </div>
           <div class="section-tagline">No “surprises” if you follow the calendar</div>
         </div>
@@ -1322,9 +1342,9 @@
             <thead>
               <tr>
                 <th>Scenario</th>
-                <th>Assumed monthly net profit <em>before</em> autónomo SS & staff</th>
+                <th>Assumed monthly net profit <em>before</em> autónomo SS &amp; staff</th>
                 <th>Employees (cost/month)</th>
-                <th>Approx. net profit after staff & SS autónomo</th>
+                <th>Approx. net profit after staff &amp; SS autónomo</th>
                 <th>Quarterly IRPF prepayment (Model 130, ~20 % of profit)</th>
               </tr>
             </thead>
@@ -1408,7 +1428,7 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-title">Running the Spanish business from abroad</div>
-                <span class="badge-soft badge-warn">Plan residency & taxes</span>
+                <span class="badge-soft badge-warn">Plan residency &amp; taxes</span>
               </div>
               <ul class="step-list">
                 <li>
@@ -1440,7 +1460,7 @@
         <div class="section-header">
           <div class="section-title">
             <div class="section-title-icon">📲</div>
-            <span>VeriFactu & e‑invoicing – staying compliant automatically</span>
+            <span>VeriFactu &amp; e‑invoicing – staying compliant automatically</span>
           </div>
         </div>
         <div class="section-body">
@@ -1533,7 +1553,7 @@
             <li>
               <div class="step-index">3</div>
               <div class="step-text">
-                Set up invoicing & payments: Spanish business bank account + VeriFactu‑ready invoicing app, connected to TikTok Shop if possible.
+                Set up invoicing &amp; payments: Spanish business bank account + VeriFactu‑ready invoicing app, connected to TikTok Shop if possible.
               </div>
             </li>
             <li>
@@ -1605,67 +1625,58 @@
       </div>
     </main>
 
+    <!-- FOOTER WITH CTA -->
     <footer>
-  <!-- Main disclaimer text -->
-  <p style="font-size:10px;color:#9ca3af;margin-bottom:8px;text-align:center;">
-    This information is uptodate till 18/03/2026 – always confirm details with a Spanish tax advisor and lawyer before making decisions.
-  </p>
+      <p style="font-size:10px;color:#9ca3af;margin-bottom:8px;text-align:center;">
+        This is a general educational template – always confirm details with a Spanish tax advisor and lawyer before making decisions.
+      </p>
 
-  <!-- Call‑to‑action row -->
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:11px;">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;font-size:11px;">
 
-    <!-- Gave me Star on GITHUB -->
-    <a href="https://github.com/imranraufbm" target="_blank" rel="noopener"
-       style="
-         padding:6px 12px;
-         border-radius:999px;
-         border:1px solid rgba(250,204,21,0.9);
-         background:rgba(250,204,21,0.12);
-         color:#facc15;
-         text-decoration:none;
-         display:inline-flex;
-         align-items:center;
-         gap:6px;
-       ">
-      <span>☕</span>
-      <span>Giving Stars on GitHub</span>
-    </a>
+        <a href="https://buymeacoffee.com/YOURNAME" target="_blank" rel="noopener"
+           style="
+             padding:6px 12px;
+             border-radius:999px;
+             border:1px solid rgba(250,204,21,0.9);
+             background:rgba(250,204,21,0.12);
+             color:#facc15;
+             text-decoration:none;
+             display:inline-flex;
+             align-items:center;
+             gap:6px;
+           ">
+          <span>☕</span>
+          <span>Buy me a coffee</span>
+        </a>
 
-    <!-- Social links (replace # with your URLs) -->
-    <a href="https://www.facebook.com/greenwebmonster/" target="_blank" rel="noopener"
-       style="
-         padding:6px 12px;
-         border-radius:999px;
-         border:1px solid rgba(56,189,248,0.8);
-         background:rgba(56,189,248,0.12);
-         color:#e0f2fe;
-         text-decoration:none;
-       ">
-      Follow on Facebook
-    </a>
+        <a href="https://www.tiktok.com/@YOURUSER" target="_blank" rel="noopener"
+           style="
+             padding:6px 12px;
+             border-radius:999px;
+             border:1px solid rgba(56,189,248,0.8);
+             background:rgba(56,189,248,0.12);
+             color:#e0f2fe;
+             text-decoration:none;
+           ">
+          Follow on TikTok
+        </a>
 
-    <a href="https://greenwebmonster.com/" target="_blank" rel="noopener"
-       style="
-         padding:6px 12px;
-         border-radius:999px;
-         border:1px solid rgba(244,114,182,0.8);
-         background:rgba(244,114,182,0.16);
-         color:#fce7f3;
-         text-decoration:none;
-       ">
-      Go to Green Web Monster 
-    </a>
-  </div>
-</footer>
-
+        <a href="https://www.instagram.com/YOURUSER" target="_blank" rel="noopener"
+           style="
+             padding:6px 12px;
+             border-radius:999px;
+             border:1px solid rgba(244,114,182,0.8);
+             background:rgba(244,114,182,0.16);
+             color:#fce7f3;
+             text-decoration:none;
+           ">
+          Follow on Instagram
+        </a>
+      </div>
+    </footer>
   </div>
 
-  <!--
-    SCRIPT
-    - Mobile menu toggle
-    - Theme toggle (adds/removes .light-theme on <body>)
-    - Contact modal open/close
-  -->
+  <!-- SCRIPT -->
   <script>
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.getElementById('navMenu');
@@ -1693,7 +1704,7 @@
       });
     }
 
-    // Theme toggle (dark / light) – simple class on <body>[web:331]
+    // Theme toggle (dark / light)
     if (themeToggle) {
       themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('light-theme');
